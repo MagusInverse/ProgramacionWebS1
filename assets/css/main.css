@@ -1,0 +1,28 @@
+.carrusel {
+    display: flex;
+    animation-name: desplazar;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    align-content: left;
+  }
+  
+  @keyframes desplazar {
+    100% {
+      transform: translateX(100%);
+    }
+    0% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .img-ref{
+    margin-top: 40px;
+    width: 50%;
+    border: 9px solid #FFF;
+  }
+
+  .title{
+    margin-top: 20px;
+    font-weight: bolder;
+    float: right;
+  }
