@@ -4,44 +4,98 @@ body{
 	font-family: 'Raleway', sans-serif;
 }
 
-.carrusel {
-  display: flex;
-  animation-name: desplazar;
-  animation-duration: 40s;
-  animation-iteration-count: infinite;
-  align-content: left;
-}
-  
-@keyframes desplazar {
-  100% {
-    transform: translateX(100%);
-  }
-  0% {
-    transform: translateX(-100%);
-  }
+.fondo-1 {
+  /*background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);*/
+  background-image: linear-gradient(to left bottom, #230827, #2b092e, #330936, #3c083d, #460544);
 }
   
 .img-ref{
   margin-top: 40px;
   width: 50%;
-  border: 9px solid #FFF;
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+  border-image-source: linear-gradient(to left, #1aff05, #639925);
+}
+
+.img-ban{
+  width: 50%;
+  border: 5px solid;
+  display: block;
+  margin:auto;
+}
+
+.img-ref:hover{
+  margin-top: 40px;
+  width: 50%;
+  border: 40px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+  border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
 }
 
 .img-banner{
-  width: 4%;
+  display: block;
+  margin:auto;
+  width: 10%;
+}
+
+.img-banner-in{
+  width: 5%;
+}
+
+.title-principal{
+  font-size: 280%;
+  text-align: center;
+  font-family: Chopsic;
+  background: -webkit-linear-gradient(#72CF08  , #E0FF14);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .title{
   text-align: center;
   font-family: consolas;
-  font-size: 500%;
+  background: -webkit-linear-gradient(#72CF08  , #E0FF14 );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-a.boton-link {
+.description {
+  font-size: 120%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font: bold;
+  text-align: justify;
+  color: #ffffff;
+}
+
+.titulos-cat{
+  background: #72CF08;
+  background: linear-gradient(to right, #72CF08 31%, #03FF68 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 110%;
+  font-family: lato, Arial, Helvetica, sans-serif;
+  text-align: left;
+  margin-left: 4%;
+  font-weight: bolder;
+}
+
+a.boton-link {  
   text-decoration: none;
-  color: initial;
   font-weight: bolder;
   float: right;
+  margin-left: 3%;
+  font-size: 150%;
+  font-family: lato, Arial, Helvetica, sans-serif;
+  background: #65CF08;
+  background: linear-gradient(to top left, #65CF08 31%, #E7FF0D 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+a.boton-link:hover {
+  color: #FF2B57;
 }
 
 .margen {
