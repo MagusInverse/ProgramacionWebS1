@@ -19,7 +19,7 @@ body{
 }
 
 .img-ban{
-  width: 50%;
+  width: 100%;
   border: 5px solid;
   display: block;
   margin:auto;
@@ -77,7 +77,7 @@ body{
   font-size: 110%;
   font-family: lato, Arial, Helvetica, sans-serif;
   text-align: left;
-  margin-left: 4%;
+  margin-left: 18%;
   font-weight: bolder;
 }
 
