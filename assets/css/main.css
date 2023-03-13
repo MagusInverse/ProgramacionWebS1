@@ -6,12 +6,25 @@ body{
 
 .fondo-1 {
   /*background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);*/
-  background-image: linear-gradient(to left bottom, #230827, #2b092e, #330936, #3c083d, #460544);
+  background-image: linear-gradient(to bottom, #000000, #131213, #1e1e1f, #2a2a2b, #353638, #3b4851, #395d65, #3a7270, #3d9277, #66b06b, #a8c854, #fad841);
 }
   
 .img-ref{
   margin-top: 40px;
+  width: 90%;
+}
+
+.img-ref-home{
+  margin-top: 40px;
   width: 50%;
+}
+
+.img-ref-home:hover{
+  margin-top: 40px;
+  border: 40px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+  border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
 }
 
 .img-ban{
@@ -23,7 +36,6 @@ body{
 
 .img-ref:hover{
   margin-top: 40px;
-  width: 50%;
   border: 40px solid;
   border-image-slice: 1;
   border-width: 5px;
@@ -73,7 +85,6 @@ body{
   font-size: 110%;
   font-family: lato, Arial, Helvetica, sans-serif;
   text-align: left;
-  margin-left: 18%;
   font-weight: bolder;
 }
 
