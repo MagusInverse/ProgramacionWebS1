@@ -55,7 +55,7 @@ body{
 .title-principal{
   font-size: 280%;
   text-align: center;
-  font-family: Chopsic;
+  font-family: Segoe Script;
   background: -webkit-linear-gradient(#72CF08  , #E0FF14);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -63,7 +63,15 @@ body{
 
 .title{
   text-align: center;
-  font-family: consolas;
+  font-family: Segoe Script;
+  background: #FAD841;
+  background: linear-gradient(to right, #FAD841 0%, #CBCFC9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.title-cat{
+  font-family: Segoe Script;
   background: -webkit-linear-gradient(#72CF08  , #E0FF14 );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -77,24 +85,13 @@ body{
   color: #ffffff;
 }
 
-.titulos-cat{
-  background: #72CF08;
-  background: linear-gradient(to right, #72CF08 31%, #03FF68 50%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 110%;
-  font-family: lato, Arial, Helvetica, sans-serif;
-  text-align: left;
-  font-weight: bolder;
-}
-
 a.boton-link {  
   text-decoration: none;
   font-weight: bolder;
   float: right;
   margin-left: 3%;
   font-size: 150%;
-  font-family: lato, Arial, Helvetica, sans-serif;
+  font-family: Segoe Script;
   background: #65CF08;
   background: linear-gradient(to top left, #65CF08 31%, #E7FF0D 50%);
   -webkit-background-clip: text;
