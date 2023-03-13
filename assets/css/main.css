@@ -12,10 +12,6 @@ body{
 .img-ref{
   margin-top: 40px;
   width: 50%;
-  border: 10px solid;
-  border-image-slice: 1;
-  border-width: 5px;
-  border-image-source: linear-gradient(to left, #1aff05, #639925);
 }
 
 .img-ban{
