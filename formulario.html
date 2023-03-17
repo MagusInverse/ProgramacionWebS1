@@ -11,7 +11,63 @@
     <title>Lemon Games</title>
     <script src="assets/js/app.js" type="text/javascript" charset="utf-8" async defer></script> 
 </head>
-<body class="fondo-1">
-
+<body class="">
+    <body>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fondo-1">
+            <div class="container-fluid">
+                <img src="assets/img/lemongames.png" class="img-banner-in" style="width: 3%;">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="login.html">Cerrar Sesión</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <h2 class="text-center">Registro de usuario</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="nombre">Nombre completo:</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="usuario">Nombre de usuario:</label>
+                            <input type="text" class="form-control" id="usuario" name="usuario">
+                        </div>
+                        <div class="form-group">
+                            <label for="correo">Correo electrónico:</label>
+                            <input type="email" class="form-control" id="correo" name="correo">
+                        </div>
+                        <div class="form-group">
+                            <label for="clave">Contraseña:</label>
+                            <input type="password" class="form-control" id="clave" name="clave">
+                        </div>
+                        <div class="form-group">
+                            <label for="repetir-clave">Repetir contraseña:</label>
+                            <input type="password" class="form-control" id="repetir-clave" name="repetir-clave">
+                        </div>
+                        <div class="form-group">
+                            <label for="fecha-nacimiento">Fecha de nacimiento:</label>
+                            <input type="date" class="form-control" id="fecha-nacimiento" name="fecha-nacimiento">
+                        </div>
+                        <div class="form-group">
+                            <label for="direccion">Dirección de despacho:</label>
+                            <textarea class="form-control" id="direccion" name="direccion"></textarea>
+                        </div>
+                        <button type="button" class="btn btn-primary" onclick="guardar()">Guardar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
 </body>
 </html>
