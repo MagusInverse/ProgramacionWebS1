@@ -23,6 +23,7 @@ function guardar() {
   
     var usuarioJSON = JSON.stringify(usuario);
     var archivo = new File([usuarioJSON], "usuarios.txt", { type: "text/plain" });
-    var writer = new FileWriter();
-    writer.write(archivo);
+    console.log(usuarioJSON);
+    //var writer = new FileWriter();
+    //writer.write(archivo);
   }
