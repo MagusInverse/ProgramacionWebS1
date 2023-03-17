@@ -1,11 +1,11 @@
 function guardar() {
-    var nombreCompleto = document.getElementById("nombreCompleto").value;
-    var nombreUsuario = document.getElementById("nombreUsuario").value;
-    var correoElectronico = document.getElementById("correoElectronico").value;
-    var claveIngreso = document.getElementById("claveIngreso").value;
-    var repetirClave = document.getElementById("repetirClave").value;
-    var fechaNacimiento = document.getElementById("fechaNacimiento").value;
-    var direccionDespacho = document.getElementById("direccionDespacho").value;
+    var nombreCompleto = document.getElementById("nombre").value;
+    var nombreUsuario = document.getElementById("usuario").value;
+    var correoElectronico = document.getElementById("correo").value;
+    var claveIngreso = document.getElementById("clave").value;
+    var repetirClave = document.getElementById("repetir-clave").value;
+    var fechaNacimiento = document.getElementById("fecha-nacimiento").value;
+    var direccionDespacho = document.getElementById("direccion").value;
   
     if (claveIngreso !== repetirClave) {
       alert("Las claves ingresadas no coinciden");
