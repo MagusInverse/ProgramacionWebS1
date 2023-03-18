@@ -18,11 +18,18 @@ function guardar() {
     }
   
     var correoFormato = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}.){1,125}[A-Z]{2,63}$/i;
-    if (correoFormato.test(correoElectronico)){
+    if (!correoFormato.test(correoElectronico)){
         alert("Por favor ingrese una dirección de correo válida");
         return false;
     }
-  
+/*
+    var validarPassword = /^(?=.*\d)(?=.*[A-Z]).{6,18}$/;
+    if (validarPassword.test(claveIngreso)){
+      alert("Por favor ingrese una contraseña/clave válida");
+      return false;
+ 
+    }
+*/
     var usuario = {
       nombreCompleto: nombreCompleto,
       nombreUsuario: nombreUsuario,
