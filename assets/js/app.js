@@ -22,14 +22,13 @@ function guardar() {
         alert("Por favor ingrese una dirección de correo válida");
         return false;
     }
-/*
-    var validarPassword = /^(?=.*\d)(?=.*[A-Z]).{6,18}$/;
-    if (validarPassword.test(claveIngreso)){
+
+    var validarPassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])([A-Za-z\d$@$!%*?&]|[^ ]){6,18}$/;
+    if (!validarPassword.test(claveIngreso)){
       alert("Por favor ingrese una contraseña/clave válida");
-      return false;
- 
+      return false; 
     }
-*/
+
     var usuario = {
       nombreCompleto: nombreCompleto,
       nombreUsuario: nombreUsuario,

@@ -59,7 +59,7 @@
                                 <path d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z"/>
                               </svg>
                             <label for="clave">Contraseña:</label>
-                            <input type="password" id="clave" name="clave" placeholder="Ejemplo: Al menos 1 letra mayúscula, 1 número, 6 a 18 caracteres." required>
+                            <input type="password" id="clave" name="clave" placeholder="Clave/Contraseña" required data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="La clave contraseña debe tener 1 número, 1 letra mayúscula, 1 símbolo y debe tener un largo entre 6 y 18 caracteres">
                         </div>
                         <div class="form-group">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-asterisk" viewBox="0 0 16 16">
@@ -73,7 +73,7 @@
                                 <path d="M8 0a1 1 0 0 1 1 1v5.268l4.562-2.634a1 1 0 1 1 1 1.732L10 8l4.562 2.634a1 1 0 1 1-1 1.732L9 9.732V15a1 1 0 1 1-2 0V9.732l-4.562 2.634a1 1 0 1 1-1-1.732L6 8 1.438 5.366a1 1 0 0 1 1-1.732L7 6.268V1a1 1 0 0 1 1-1z"/>
                               </svg>
                             <label for="fecha-nacimiento">Fecha de nacimiento:</label>
-                            <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" placeholder="Día - Mes - Año" required>
+                            <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" placeholder="Día - Mes - Año" required data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="La edad mínima de registro es de 13 años.">
                         </div>
                         <div class="form-group">
                             <label for="direccion">Dirección de despacho (opcional):</label>
@@ -84,5 +84,9 @@
                 </div>
             </div>
         </div>
+        <script>
+          const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+          const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+        </script>
 </body>
 </html>
