@@ -38,6 +38,3 @@ function guardar() {
     //var writer = new FileWriter();
     //writer.write(archivo);
   }
-
-
-  
