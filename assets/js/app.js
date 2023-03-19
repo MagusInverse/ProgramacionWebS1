@@ -29,6 +29,15 @@ function guardar() {
       return false; 
     }
 
+    var anoNac = parseInt(fechaNacimiento.substring(0,4));
+    var hoy = new Date();
+    var anoActual = hoy.getFullYear();
+    var edad = anoActual - anoNac;
+    if (edad < 13) {
+      alert("Debe tener al menos 13 años de edad para registrarse.");
+      return false;
+    }
+
     var usuario = {
       nombreCompleto: nombreCompleto,
       nombreUsuario: nombreUsuario,
@@ -39,11 +48,16 @@ function guardar() {
     };
   
     var usuarioJSON = JSON.stringify(usuario);
-    var archivo = new File([usuarioJSON], "usuarios.txt", { type: "text/plain" });
     console.log(usuarioJSON);
-    //var writer = new FileWriter();
-    //writer.write(archivo);
   }
 
-
+function limpiar(){
+    document.getElementById("nombre").value = "";
+    document.getElementById("usuario").value = "";
+    document.getElementById("correo").value = "";
+    document.getElementById("clave").value = "";
+    document.getElementById("repetir-clave").value = "";
+    document.getElementById("fecha-nacimiento").value = "";
+    document.getElementById("direccion").value = "";
+}
   
