@@ -11,7 +11,7 @@ body{
 
 .fondo-1 {
   /*background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);*/
-  background-image: linear-gradient(to bottom, #000000, #131213, #1e1e1f, #2a2a2b, #353638, #3b4851, #395d65, #3a7270, #3d9277, #66b06b, #a8c854, #fad841);
+  background-image: linear-gradient(to right top, #212529, #313437, #424346, #535354, #646464);
 }
   
 .img-ref{
@@ -62,7 +62,7 @@ body{
   margin-bottom: 15px;
   font-size: 280%;
   text-align: center;
-  font-family: Segoe Script;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   background: -webkit-linear-gradient(#72CF08  , #E0FF14);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -71,7 +71,7 @@ body{
 .title{
   margin-top: 2.3%;
   text-align: center;
-  font-family: Segoe Script;
+  font-family: Candara;
   background: #FAD841;
   background: linear-gradient(to right, #FAD841 0%, #CBCFC9 100%);
   -webkit-background-clip: text;
@@ -79,10 +79,17 @@ body{
 }
 
 .title-cat{
-  font-family: Segoe Script;
+  margin-top: 40px;
+  font-family: Candara;
   background: -webkit-linear-gradient(#72CF08  , #E0FF14 );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.text-formulario{
+  font-family: Candara;
+  font: bold;
+  color: #FAD841;
 }
 
 .description {
@@ -148,6 +155,6 @@ a.boton-link:hover {
 }
 
 ::placeholder {
-  color: green;
+  color: rgb(167, 100, 0);
   opacity: .5;
 }
